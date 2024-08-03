@@ -1,7 +1,7 @@
 ---
 # Banner
 banner:
-  title: "The Ultimate AI Video Engine You Need To generation Broadcasting-Video"
+  title: "The Ultimate Video Engine You Need To generate AI Broadcasting Video"
   content: "FlashFly is a Video Generation Engine, providing everything you need to generate video and save valuable time"
   image: "/images/banner.png"
   button:
@@ -28,11 +28,11 @@ features:
 
   - title: "Discover the Key Features Of FlashFly"
     image: "/images/service-2.png"
-    content: "Astro is an all-in-one AI engine for building fast, content-focused videos for professionals and creators. Some of the key features are:"
+    content: "FlashFly is an all-in-one AI engine for building fast, content-focused videos for professionals and creators. Some of the key features are:"
     bulletpoints:
       - "One-Click generation videos."
-      - "Outdated information and hotest News especially in financial market."
-      - "Beautiful Captions and emotions."
+      - "Updated information and hottest News especially in financial market."
+      - "Beautiful Captions, Emotion stickers, and special Effects."
     button:
       enable: true
       label: "Get Started Now"
