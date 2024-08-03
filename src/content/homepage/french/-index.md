@@ -2,7 +2,7 @@
 # Banner
 banner:
   title: "Le modèle de démarrage ultime dont vous avez besoin pour démarrer votre projet Astro"
-  content: "Astroplate est un modèle de démarrage gratuit construit avec Astro et TailwindCSS, fournissant tout ce dont vous avez besoin pour démarrer votre projet Astro et gagner un temps précieux."
+  content: "FlashFly est un modèle de démarrage gratuit construit avec Astro et TailwindCSS, fournissant tout ce dont vous avez besoin pour démarrer votre projet Astro et gagner un temps précieux."
   image: "/images/banner.png"
   button:
     enable: true
@@ -11,9 +11,9 @@ banner:
 
 # Features
 features:
-  - title: "Ce qui est inclus dans Astroplate"
+  - title: "Ce qui est inclus dans FlashFly"
     image: "/images/service-1.png"
-    content: "Astroplate est un modèle de démarrage complet qui inclut tout ce dont vous avez besoin pour démarrer votre projet Astro. Ce qui est inclus dans Astroplate"
+    content: "FlashFly est un modèle de démarrage complet qui inclut tout ce dont vous avez besoin pour démarrer votre projet Astro. Ce qui est inclus dans FlashFly"
     bulletpoints:
       - "10+ pages pré-construites"
       - "Score Google Pagespeed de 95+"
