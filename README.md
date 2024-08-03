@@ -1,96 +1,131 @@
-# stable-diffusion-react-nextjs-mui-pwa
+<h1 align=center>Astro + Tailwind CSS + TypeScript Starter and Boilerplate</h1>
 
-_PWA Web App front end for Stable Diffusion, on React/NextJS with Material UI_
+<p align=center>Astroplate is a free starter template built with Astro, TailwindCSS & TypeScript, providing everything you need to jumpstart your Astro project and save valuable time.</p>
 
-Copyright (c) 2022 by Gadi Cohen <dragon@wastelands.net>. MIT Licensed.
+<p align=center>Made with ♥ by <a href="https://zeon.studio/">Zeon Studio</a></p>
 
-<span style="font-size: larger;">
-  <a href="https://app.titanplus.cn">app.titanplus.cn</a>
-</span>
+<p align=center> If you find this project useful, please give it a ⭐ to show your support. </p>
 
-## New Project in Active Development (since Aug 31st, 2022)
+<h2 align="center"> <a target="_blank" href="https://astroplate.netlify.app/" rel="nofollow">👀 Demo</a> | <a  target="_blank" href="https://pagespeed.web.dev/analysis/https-astroplate-netlify-app/yzx3foum3w?form_factor=desktop">Page Speed (100%)🚀</a>
+</h2>
 
-<img align="right" src="./docs/img/cover2.jpg" alt="super dog" />
+<p align=center>
+  <a href="https://github.com/withastro/astro/releases/tag/astro%404.3.2" alt="Contributors">
+    <img src="https://img.shields.io/static/v1?label=ASTRO&message=4.3&color=000&logo=astro" />
+  </a>
 
-- Web interface to run Stable Diffusion queries on:
-  - Local PC / local installation
-  - [Banana.dev](https://banana.dev) serverless GPU containers (roughly $1 = 200 requests, YMMV)
-  - Local banana.dev docker container (see [docs/banana-local.md](./docs/banana-local.md))
-  - Others?
+  <a href="https://github.com/zeon-studio/astroplate/blob/main/LICENSE">
+    <img src="https://img.shields.io/github/license/zeon-studio/astroplate" alt="license"></a>
 
-Why? Make this fun stuff more accessible to web developers and friends :) See the [live demo](https://app.titanplus.cn), run on your own PC for free, or deploy!
+  <img src="https://img.shields.io/github/languages/code-size/zeon-studio/astroplate" alt="code size">
 
-If you have a background in web dev / dev ops, and have wanted to experiment a bit with machine learning / latent diffusion (AI image generation), this is a great project to get involved in :)
+  <a href="https://github.com/zeon-studio/astroplate/graphs/contributors">
+    <img src="https://img.shields.io/github/contributors/zeon-studio/astroplate" alt="contributors"></a>
+</p>
 
-Doing this in my very limited spare time, PRs more likely to get responses than issues, but try me :)
+## 📌 Key Features
 
-## To Develop
+- 👥 Multi-Authors
+- 🌐 Multilingual
+- 🎯 Similar Posts Suggestion
+- 🔍 Search Functionality
+- 🌑 Dark Mode
+- 🏷️ Tags & Categories
+- 🔗 Netlify setting pre-configured
+- 📞 Support contact form
+- 📱 Fully responsive
+- 📝 Write and update content in Markdown / MDX
+- 💬 Disqus Comment
+- 🔳 Syntax Highlighting
 
-1. Clone repo
-1. `yarn install`
-1. ~~edit `.env.local`~~ (or just set local vars - per below)
-1. `yarn dev` localhost:3000
+### 📄 15+ Pre-designed Pages
 
-## 打包到out目录, 需要nginx来运行
-1. `yarn export`
+- 🏠 Homepage
+- 👤 About
+- 📞 Contact
+- 👥 Authors
+- 👤 Author Single
+- 📝 Blog
+- 📝 Blog Single
+- 🚫 Custom 404
+- 💡 Elements
+- 📄 Privacy Policy
+- 🏷️ Tags
+- 🏷️ Tag Single
+- 🗂️ Categories
+- 🗂️ Category Single
+- 🔍 Search
 
-Note: you'll need at least one destination / target from the list below where Stable Diffusion will run.
+## 🔗 Integrations
 
-## Destinations / Targets
+- astro/react
+- astro/sitemap
+- astro/tailwind
 
-- **Local docker image (recommended)**
+## 🚀 Getting Started
 
-  - Pretty easy if you have docker installed.
-  - See https://github.com/kiri-art/docker-diffusers-api.
+### 📦 Dependencies
 
-- **Local Exec**
+- astro v4.12+
+- node v20.10+
+- npm v10.2+
+- tailwind v3.4+
 
-  - If you already have Stable Diffusion installed locally,
-    this will run the Python script via node spawn.
-  - Set `STABLE_DIFFUSION_HOME` (to e.g. `/home/user/src/stable-diffusion`).
-  - Works, but not as well maintained as the docker based solutions.
-
-- **Remote BananaDev docker container (serverless GPU)**
-
-  - Great for local dev if you don't have a supported GPU
-  - Default for deployments or when `NODE_ENV=="production"`
-  - I'm paying roughly $1 = 200 requests with default params, YMMV.
-  - Follow instructions at https://github.com/kiri-art/docker-diffusers-api.
-  - Set `BANANA_API_KEY` and `BANANA_MODEL_KEY` env variables.
-  - Set the relevant keys for your deployed models,
-    `BANANA_MODEL_KEY_SD_v1_5` by default.
-
-## REQUIRE_REGISTRATION
-
-By default, registration (i.e. sign up, log in, use credits) is required in production only. You can turn it on in development (to test the auth flow), or turn it off in production (if you're deploying somewhere private).
+### 👉 Install Dependencies
 
 ```bash
-REQUIRE_REGISTRATION=1
-NEXT_PUBLIC_REQUIRE_REGISTRATION=1
+npm install
 ```
 
-Note: `NEXT_PUBLIC_` vars are compiled at build time! So if you want to deploy to production without requiring registration, set it to `0` _before_ building and deploying.
+### 👉 Development Command
 
-## TODO
+```bash
+npm run dev
+```
 
-- Docker image for super easy start
-- Vercel clone button
+### 👉 Build Command
 
-## i18n
+```bash
+npm run build
+```
 
-We use NextJS's built-in
-[i18n routing](https://nextjs.org/docs/advanced-features/i18n-routing) and
-[Lingui](https://lingui.js.org/tutorials/setup-react.html) for translations.
+### 👉 Build and Run With Docker
 
-Useful commands:
+```bash
+docker build -t astroplate .
+# or
+# docker --build-arg INSTALLER=npm build -t astroplate .
+# or
+# docker --build-arg INSTALLER=pnpm build -t astroplate .
 
-- `yarn i18n:extract` to extract strings.
-- Send `locales/*/messages.po` to translators, resave.
-- `yarn i18n:compile` before deploy.
+docker run -p 3000:80 astroplate
+# or
+# docker run --rm -p 3000:80 astroplate
+```
 
-See also [lingui.config.js](./lingui.config.js) and [locales](./locales) dir.
+To access the shell within the container:
 
-## Refs
+```bash
+docker run -it --rm astroplate ash
+```
 
-- https://github.com/mui/material-ui/tree/master/examples/nextjs-with-typescript
--
+<!-- reporting issue -->
+
+## 🐞 Reporting Issues
+
+We use GitHub Issues as the official bug tracker for this Template. Please Search [existing issues](https://github.com/zeon-studio/astroplate/issues). It’s possible someone has already reported the same problem.
+If your problem or idea has not been addressed yet, feel free to [open a new issue](https://github.com/zeon-studio/astroplate/issues).
+
+<!-- licence -->
+
+## 📝 License
+
+Copyright (c) 2023 - Present, Designed & Developed by [Zeon Studio](https://zeon.studio/)
+
+**Code License:** Released under the [MIT](https://github.comzeon-studio/astroplate/blob/main/LICENSE) license.
+
+**Image license:** The images are only for demonstration purposes. They have their license, we don't have permission to share those images.
+
+## 💻 Need Custom Development Services?
+
+If you need a custom theme, theme customization, or complete website development services from scratch you can [Hire Us](https://zeon.studio/).
